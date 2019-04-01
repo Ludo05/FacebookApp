@@ -57,6 +57,7 @@ class ConversationContainer extends Component {
     // https://reactjs.org/docs/react-component.html#componentdidupdate
 
   console.log(this.props);
+  console.log(this.state.conversation)
     return (
       // hint, which component and props do you think we should return here?
       <Conversation match={match} username={username} conversation={this.state.conversation}/>

@@ -5,7 +5,6 @@ import ConversationContent from './Content'
 import ConversationSection from './ConversationSection'
 
 
-
  const Conversation = ({username, conversation, match}) => (
       <ConversationSection>
         <ConversationBar username={username} match={match} totalMessages={conversation.length}/>
