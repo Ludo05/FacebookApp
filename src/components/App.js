@@ -13,7 +13,7 @@ const App = () => (
     <TopBar userPosition="right" />
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/messages" component={Messenger} />
+      <Route path="/messenger" component={Messenger} />
       <Route path="/profile" component={Profile} />
       <Route component={NotFound}/>
     </Switch>

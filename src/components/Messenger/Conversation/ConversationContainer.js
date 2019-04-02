@@ -30,14 +30,10 @@ class ConversationContainer extends Component {
           })
         })
     }, 1000)
-  }
+  };
 
   // https://reactjs.org/docs/react-component.html#componentdidupdate
   componentDidUpdate(prevProps) {
-    //const needsToFetchUser = false;
-    // const needsToFetchUser = `Hint. Now you don't need to iterate the messages array
-    // to see if the username in the url is different from the username's conversation you
-    // are displaying. Use the prevProps parameter and the this.props in the following condition `
     const { username } = this.props.match.params;
     const {conversation} = this.state;
     const needsToFetchUser = conversation.length && !conversation.find(({ from, to }) => (
@@ -66,3 +62,9 @@ class ConversationContainer extends Component {
 }
 
 export default ConversationContainer
+
+
+//const needsToFetchUser = false;
+// const needsToFetchUser = `Hint. Now you don't need to iterate the messages array
+// to see if the username in the url is different from the username's conversation you
+// are displaying. Use the prevProps parameter and the this.props in the following condition `
